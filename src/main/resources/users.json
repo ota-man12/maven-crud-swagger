@@ -1,0 +1,14 @@
+{
+  "1": {
+    "userId": "1",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "contactNumber": "0987654321"
+  },
+  "2": {
+    "userId": "2",
+    "firstName": "John",
+    "lastName": "Doe",
+    "contactNumber": "1234567890"
+  }
+}
