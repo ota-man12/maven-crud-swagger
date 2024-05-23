@@ -20,7 +20,6 @@ public class UserService {
 
     /**
      * Adds a new user.
-     * 
      * @param user The user to add.
      * @throws IOException If an I/O error occurs while saving the user.
      */
@@ -30,7 +29,6 @@ public class UserService {
 
     /**
      * Retrieves a user by their ID.
-     * 
      * @param userId The ID of the user to retrieve.
      * @return The user with the specified ID, or null if not found.
      */
@@ -40,7 +38,6 @@ public class UserService {
 
     /**
      * Retrieves all users.
-     * 
      * @return A map of all users.
      */
     public Map<String, User> getAllUsers() {
@@ -49,7 +46,6 @@ public class UserService {
 
     /**
      * Updates an existing user.
-     * 
      * @param user The user with updated information.
      * @throws IOException If an I/O error occurs while saving the user.
      */
@@ -59,7 +55,6 @@ public class UserService {
 
     /**
      * Deletes a user by their ID.
-     * 
      * @param userId The ID of the user to delete.
      * @throws IOException If an I/O error occurs while deleting the user.
      */

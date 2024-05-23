@@ -33,8 +33,7 @@ public class UserRepository {
         try {
             File file = new File(filePath);
             if (file.exists()) {
-                userMap = objectMapper.readValue(file, new TypeReference<Map<String, User>>() {
-                });
+                userMap = objectMapper.readValue(file, new TypeReference<Map<String, User>>() {});
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -43,7 +42,6 @@ public class UserRepository {
 
     /**
      * Saves a user to the repository and updates the JSON file.
-     * 
      * @param user The user to save.
      * @throws IOException If an I/O error occurs.
      */
@@ -54,7 +52,6 @@ public class UserRepository {
 
     /**
      * Retrieves a user by their ID.
-     * 
      * @param userId The ID of the user to retrieve.
      * @return The user with the specified ID, or null if not found.
      */
@@ -64,7 +61,6 @@ public class UserRepository {
 
     /**
      * Deletes a user by their ID and updates the JSON file.
-     * 
      * @param userId The ID of the user to delete.
      * @throws IOException If an I/O error occurs.
      */
@@ -75,7 +71,6 @@ public class UserRepository {
 
     /**
      * Retrieves all users.
-     * 
      * @return A map of all users.
      */
     public Map<String, User> getAllUsers() {

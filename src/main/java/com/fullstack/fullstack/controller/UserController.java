@@ -34,7 +34,7 @@ public class UserController {
 
     /**
      * Adds a new user.
-     * 
+     *
      * @param user The user to add.
      * @return ResponseEntity indicating the result of the operation.
      */
@@ -52,9 +52,9 @@ public class UserController {
 
     /**
      * Updates an existing user.
-     * 
+     *
      * @param userId The ID of the user to update.
-     * @param user   The updated user data.
+     * @param user The updated user data.
      * @return ResponseEntity indicating the result of the operation.
      */
     @PostMapping("/{userId}")
@@ -72,7 +72,7 @@ public class UserController {
 
     /**
      * Retrieves a user by ID.
-     * 
+     *
      * @param userId The ID of the user to retrieve.
      * @return ResponseEntity containing the user data or a not found status.
      */
@@ -90,8 +90,7 @@ public class UserController {
 
     /**
      * Retrieves all users.
-     * 
-     * @return ResponseEntity containing a list of all users or an error status.
+     * @return ResponseEntity containing a map of all users or an error status.
      */
     @GetMapping
     public ResponseEntity<Map<String, User>> getAllUsers() {
@@ -107,7 +106,7 @@ public class UserController {
 
     /**
      * Deletes a user by ID.
-     * 
+     *
      * @param userId The ID of the user to delete.
      * @return ResponseEntity indicating the result of the operation.
      */
